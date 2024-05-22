@@ -53,10 +53,10 @@ def Extraer_datos_web(url):
 
 
 # Llamar a la función para rastrear el sitio web y obtener los datos
-result = Extraer_datos_web(url)
+resultado = Extraer_datos_web(url)
 
 # Guardar los datos en un archivo JSON
-with open('Información_extraída.json', 'w') as json_file:
-    json.dump(result, json_file, indent=4)
+with open('datos_recolectados.json', 'w') as json_file:
+    json.dump(resultado, json_file, indent=4)
 
 print("Los datos se han almacenado correctamente en 'Información_extraída.json'")
